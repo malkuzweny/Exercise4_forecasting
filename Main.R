@@ -3,8 +3,8 @@ devtools::install_github("eco4cast/neon4cast")
 library(tidyverse)
 library(neon4cast)
 library(lubridate)
-install.packages("rMR")
-library(rMR)
+#install.packages("rMR")
+#library(rMR)
 
 forecast_date <- Sys.Date()
 noaa_date <- Sys.Date() - days(1)  #Need to use yesterday's NOAA forecast because today's is not available yet
