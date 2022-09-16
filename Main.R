@@ -4,17 +4,21 @@ library(tidyverse)
 library(neon4cast)
 library(lubridate)
 #install.packages("rMR")
-#library(rMR)
+library(rMR)
 
 forecast_date <- Sys.Date()
 noaa_date <- Sys.Date() - days(1)  #Need to use yesterday's NOAA forecast because today's is not available yet
 
 #Step 0: Define team name and team members 
 team_info <- list(team_name = "air2waterSat_MCD",
-                  team_list = list(list(individualName = list(givenName = "Mike", 
-                                                              surName = "Dietze"),
-                                        organizationName = "Boston University",
-                                        electronicMailAddress = "dietze@bu.edu"))
+                  team_list = list(list(individualName = list(givenName = "Manar", 
+                                                              surName = "Alkuzweny"),
+                                        organizationName = "University of Notre Dame",
+                                        electronicMailAddress = "manaralkuzweny@gmail.com"),
+                                   list(individualName = list(givenName = "Kayla", 
+                                                              surName = "Anderson"),
+                                        organizationName = "University of Notre Dame",
+                                        electronicMailAddress = "kander42@nd.edu"))
 )
 
 ## Load required functions
