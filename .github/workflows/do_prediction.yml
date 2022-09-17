@@ -2,9 +2,6 @@ on:
   workflow_dispatch:
   schedule:
   - cron: "0 20 * * *"
-  
-env: 
-  GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   build:
@@ -14,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+        env: 
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
         with:
           fetch-depth: 0
           
