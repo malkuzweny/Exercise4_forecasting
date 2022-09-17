@@ -3,8 +3,8 @@ on:
   schedule:
   - cron: "0 20 * * *"
   
-env:
-  GITHUB_PAT: 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
+#env:
+  #GITHUB_PAT: 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
 
 jobs:
   build:
