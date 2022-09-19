@@ -1,5 +1,5 @@
 ### Aquatic Forecast Workflow ###
-install.packages("devtools")
+#install.packages("devtools")
 #devtools::install_github("eco4cast/neon4cast", auth_token = NULL)
 #devtools::install_github("git@github.com:eco4cast/neon4cast.git", auth_token = NULL)
 library(tidyverse)
